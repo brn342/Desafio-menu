@@ -10,7 +10,7 @@ public class DishTests
     [TestCase("Burger", 8.99, false)]
     public void Constructor_WithValidParameters_SetsProperties(string name, double price, bool isVegetarian)
     {
-        Dish dish = new Dish(name, price, isVegetarian);
+        Dish dish = new Dish(name, price, isVegetarian);    
 
         Assert.That(dish.Name, Is.EqualTo(name));
         Assert.That(dish.Price, Is.EqualTo(price));
